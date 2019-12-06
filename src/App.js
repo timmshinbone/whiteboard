@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Router, Route, Link } from "react-router-dom";
+import HomePage from "./HomePage";
+import TopBar from "./TopBar";
+import { createBrowserHistory as createHistory } from "history";
 import './App.css';
+
+const history = createHistory();
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router history={history}>
+        <TopBar />
+        <Route path="/" exact component={HomePage} />
+      </Router>
     </div>
   );
 }
