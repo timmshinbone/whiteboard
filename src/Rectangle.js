@@ -33,7 +33,7 @@ const Rectangle = ({ shapeProps, isSelected, onSelect, onChange }) => {
 					const scaleX = node.scaleX();
 					const scaleY = node.scaleY();
 					node.scaleX(1);
-					node.scaleY();
+					node.scaleY(1);
 					onChange({
 						...shapeProps,
 						x: node.x(),
@@ -48,3 +48,23 @@ const Rectangle = ({ shapeProps, isSelected, onSelect, onChange }) => {
 	);
 };
 export default Rectangle;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

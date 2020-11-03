@@ -37,7 +37,7 @@ const Circ = ({ shapeProps, isSelected, onSelect, onChange }) => {
 						x: node.x(),
 						y: node.y(),
 						width: node.width() * scaleX,
-						height: node.height() * scaleY,
+						height: node.height() * scaleY
 					});
 				}}
 			/>

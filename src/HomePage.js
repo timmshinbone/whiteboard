@@ -46,6 +46,7 @@ function HomePage() {
 			y: getRandomInt(100),
 			width: 100,
 			height: 100,
+			radius: 70,
 			fill: "blue",
 			id: `circ${circles.length + 1}`,
 		};

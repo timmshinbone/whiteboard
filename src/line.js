@@ -33,3 +33,24 @@ export const addLine = (stage, layer, mode = "brush") => {
 	});
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
